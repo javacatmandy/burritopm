@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- HTML5 doctype -->
+
+<html lang="en"> <!-- HTML5 opening HTML tag with language. The HTML tag can also be used on it's own -->
+
+<head>
+
+<meta charset="UTF-8"> <!-- HTML5 charset -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="script.js"></script>
+
+<title>Mr Burrito™</title>
+
+<link rel="stylesheet" href="external.css">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="container1"><!--create a container for whole contents-->
+    <div class="sub-container1">
+      <h2 id="Logo"> Mr Burrito™</h2>
+      <form name="form1">
+        <table><!--use table to format username and password varify-->
+          <tr>
+            <td>User name</td>
+            <td><input type="text" name="username" placeholder="Cannot be empty!"></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input type="password" id="pwd" name="password" minlength="9" maxlength="9" placeholder="Must be 9 characters"></td>
+          </tr>
+        </table>
+        <button id="login_button" type="button" onclick="myAlert()">Log In</button>
+      </form>
+    </div>
+
+    <div class="sub-container2">
+      <h3 id="order">Order Now</h3>
+      <div class="gif-container"><img src="mexico.gif" alt="background decoration" width="200"></div>
+      <form name="form2">
+        <table class="Stipulation-table" id="demo"><!--use table to format buritto size, amout, promote code-->
+          <tr>
+            <td>
+             Health reminder: supersize is not healthy!
+           </td>
+         </tr>
+        </table>
+        <table>
+          <tr>
+            <td>Choose Burrito Size</td><!--drop down list -->
+            <td><select name = "size" onchange="Supersizealert()" >
+                <option value="Large">Large (&euro;7)</option>
+                <option value="Extra-Large">Extra-Large (&euro;9)</option>
+                <option value="Supersize" >Supersize (&euro;17.5)</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td>Amount of Burrito</td>
+            <td><input type="number" id="Amount" name="amount" placeholder="Please enter a number"></td>
+          </tr>
+          <tr>
+            <td>Discount Code!</td>
+            <td><input type="text" name="code" placeholder="Try MexTexGood for new user" size = "26"></td>
+          </tr><!--also give a hint for discount code-->
+        </table>
+        <button id="submit_button" onclick="calculateTotal()" type="button" >Submit</button>
+    </form>
+  </div>
+  <div class="sub-container3">
+    <h4 id="finalorder">Don't forget discount code if you have!</h4>
+  </div>
+  </div>
+</body>
+
+
+</html>

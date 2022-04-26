@@ -1,0 +1,60 @@
+
+body {
+ background-image: url('webpage.png');
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+ font: 20px verdana;
+}
+table {
+  border :2px solid black;
+  border-radius: 12px;
+  border-color: #8c8c8c;
+}
+.Stipulation-table{
+  border :2px solid black;
+  border-radius: 12px;
+}
+.container1{
+
+  margin-left: 30%;
+  margin-top: 8%;
+
+}
+
+.gif-container{
+  float:right;
+  margin-right: 30%;
+}
+
+#Logo{
+  /*text-align: center;*/
+  /*margin-top: 15%;*/
+  font-style: italic;
+}
+#order{
+  font-style: italic;
+}
+#login_button{
+  width: 272px;
+  height:30px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #e6e6e6;
+}
+#submit_button{
+  width: 405px;
+  height:30px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #e6e6e6;
+}
+#demo{
+  display: none;
+  background-color:#ffb3b3;
+  font-style: italic;
+  font-size: 18px;
+}
+#finalorder{
+  font-style: italic;
+}
